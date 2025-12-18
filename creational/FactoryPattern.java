@@ -2,7 +2,7 @@ package creational;
 interface Logistic {
     void send();
 } 
- class Air implements Logistic{
+class Air implements Logistic{
     @Override
     public void send() {
         System.out.println("Sending by Air");
