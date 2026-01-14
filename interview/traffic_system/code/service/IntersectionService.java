@@ -112,7 +112,7 @@ public class IntersectionService {
         Intersection intersection = intersectionRepository.findById(intersectionId);
         if (intersection != null) {
             // Use emergency transition for each direction
-            for (domain.Direction direction : domain.Direction.values()) {
+            for (Direction direction : Direction.values()) {
                 intersection.emergencyTransitionToRed(direction);
             }
             System.out.println("Emergency: All signals transitioned to RED for intersection " + intersectionId);
